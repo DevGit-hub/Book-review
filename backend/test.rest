@@ -1,0 +1,41 @@
+
+
+POST http://localhost:5000/auth/login
+ Content-Type: application/json
+
+{
+  "emailOrUsername": "test",
+  "password": "1234"
+}
+
+
+####
+POST http://localhost:5000/auth/signup
+  Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "username": "test",
+  "password": "1234",
+  "isAdmin": 0
+}
+
+
+### Add a new book
+POST http://localhost:5000/api/books
+ Content-Type: application/json
+
+{
+  "category": "action",
+  "name": "The Great Adventurqwe",
+  "year": 2023,
+  "description": "An exciting action-packed novel.",
+  "rating": 4.5,
+  "imageUrl": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABJ2lDQ1BJQ0MgUHJvZmlsZQAAeAGFVM9rE0EU/..."
+}
+
+
+
+###
+GET http://localhost:5000/api/books
+

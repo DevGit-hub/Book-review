@@ -1,0 +1,206 @@
+/* Overall admin panel styling */
+.admin-panel {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Category filter section */
+.category-filter {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-filter label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.category-filter select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.category-filter select:hover {
+  border-color: #888;
+}
+
+/* Add and Edit Book Form Styling */
+.add-book,
+.edit-book {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.add-book h2,
+.edit-book h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.add-book form,
+.edit-book form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-book input,
+.edit-book input,
+.add-book textarea,
+.edit-book textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.add-book input[type="file"],
+.edit-book input[type="file"] {
+  padding: 5px;
+}
+
+.add-book button,
+.edit-book button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.add-book button:hover,
+.edit-book button:hover {
+  background-color: #45a049;
+}
+
+.edit-book button.cancel {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.edit-book button.cancel:hover {
+  background-color: #e53935;
+}
+
+/* Book List Table Styling */
+.book-list {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.book-list h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-table th,
+.book-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.book-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.book-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.book-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.book-table td img {
+  max-width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-table td button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin: 2px;
+}
+
+.book-table td button.delete {
+  background-color: #f44336;
+}
+
+.book-table td button:hover {
+  opacity: 0.9;
+}
+
+.book-table td button.delete:hover {
+  background-color: #e53935;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 10px;
+  }
+
+  .category-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .category-filter label {
+    margin-bottom: 5px;
+  }
+
+  .book-table th,
+  .book-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .book-table td button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
